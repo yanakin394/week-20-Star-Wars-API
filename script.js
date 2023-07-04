@@ -27,10 +27,10 @@ if (number === '') {
     infoBlock.innerHTML = loader;
     
 //создаю  фетч запрос
-    fetch (`http://swapi.dev/api/${selectList}/${number}/`)
+    fetch (`https://swapi.dev/api/${selectList}/${number}/`)
         .then((res) => {
             if(!res.ok) {
-                throw new Error('Сервер не доступен!');
+                throw new Error(`Ошибка ${res.status}: ${res.statusText}`);
             }
             return res.json();
         })

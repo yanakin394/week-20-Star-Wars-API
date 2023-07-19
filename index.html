@@ -11,21 +11,37 @@
 <body>
     <div class="background stars"></div>
     <div class="wrapper">
-        <h1>Star Wars</h1>    
+        <h1>Star Wars</h1> 
+        <p>This is my homework to learn how to get info from API. 
+            </br>So I used SWAPI. You can choose the category and number to see what they have on SWAPI.
+        </p>   
         <form class="form">
-            <select id="select">
-                <option value="films">Фильмы</option>
-                <option value="people">Люди</option>
-                <option value="planets">Планеты</option>
-                <option value="species">Другие виды</option>
-                <option value="starships">Звездные корабли</option>
-                <option value="vehicles">Транспортные средства</option>
+            <select id="select" class="select">
+                <option value="films">Movies</option>
+                <option value="people">People</option>
+                <option value="planets">Planets</option>
+                <option value="species">Other species</option>
+                <option value="starships">Starships</option>
+                <option value="vehicles">Vehicles</option>
             </select>
-            <input type="number" placeholder="Введите номер" max="10" min="1" class="number">
+            <input type="number" placeholder="Pick a number" max="10" min="1" class="number">
             <button class="btn">Start</button>
         </form>
         <div class="info"></div>
         <div class="error"></div>
+        <div class="scene">
+            <div class="carousel">
+                <img style="--i:000deg" src="/assets/images/yoda.jpg">
+                <img style="--i:040deg" src="/assets/images/darth.jpg">
+                <img style="--i:080deg" src="/assets/images/starship.jpg">
+                <img style="--i:120deg" src="/assets/images/luke_leia.jpg">
+                <img style="--i:160deg" src="/assets/images/robots.jpeg">
+                <img style="--i:200deg" src="/assets/images/tatooine.jpg">
+                <img style="--i:240deg" src="/assets/images/anakin_obi.jpg">
+                <img style="--i:280deg" src="/assets/images/han_chewi.jpg">
+                <img style="--i:320deg" src="/assets/images/stormtroopers.jpeg">
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

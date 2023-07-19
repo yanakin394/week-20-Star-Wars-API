@@ -16,7 +16,7 @@ document.querySelector('.form').addEventListener('submit', event => {
                 </g>
             </g>
         </svg>
-    <span class="text">Loading</span>
+    <span class="text">Loading...</span>
     </span>`;
 //проверка на пустые поля
 if (number === '') {
